@@ -38,4 +38,28 @@
   <circle cx="600" cy="400" r="5" fill="currentColor"/>
   <circle cx="600" cy="500" r="5" fill="currentColor"/>
   <circle cx="700" cy="500" r="5" fill="currentColor"/>
+  
+  <!-- Additional circuit elements -->
+  <path d="M 100,100 L 100,200 L 200,200 L 200,300 L 300,300 L 300,400" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <circle cx="100" cy="100" r="4" fill="currentColor"/>
+  <circle cx="100" cy="200" r="4" fill="currentColor"/>
+  <circle cx="200" cy="200" r="4" fill="currentColor"/>
+  <circle cx="200" cy="300" r="4" fill="currentColor"/>
+  <circle cx="300" cy="300" r="4" fill="currentColor"/>
+  <circle cx="300" cy="400" r="4" fill="currentColor"/>
+  
+  <path d="M 400,400 C 450,350 500,500 550,450" stroke="currentColor" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="400" r="4" fill="currentColor"/>
+  <circle cx="550" cy="450" r="4" fill="currentColor"/>
+  
+  <!-- Binary code-like pattern -->
+  <text x="50" y="350" font-family="monospace" font-size="12" fill="currentColor">10110101</text>
+  <text x="150" y="350" font-family="monospace" font-size="12" fill="currentColor">01001010</text>
+  <text x="50" y="380" font-family="monospace" font-size="12" fill="currentColor">11100011</text>
+  <text x="150" y="380" font-family="monospace" font-size="12" fill="currentColor">00101100</text>
+  
+  <text x="450" y="350" font-family="monospace" font-size="12" fill="currentColor">10110101</text>
+  <text x="550" y="350" font-family="monospace" font-size="12" fill="currentColor">01001010</text>
+  <text x="450" y="380" font-family="monospace" font-size="12" fill="currentColor">11100011</text>
+  <text x="550" y="380" font-family="monospace" font-size="12" fill="currentColor">00101100</text>
 </svg>
