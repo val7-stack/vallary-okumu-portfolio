@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText, Download } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
@@ -70,9 +70,11 @@ const Navbar = () => {
                   {link.name}
                 </button>
               ))}
-              <Button onClick={() => scrollToSection('cv')} size="sm" className="ml-4 bg-engineer-600 hover:bg-engineer-700">
-                Download CV
-              </Button>
+              <a href="/vallary_okumu_cv.pdf" download>
+                <Button size="sm" className="ml-4 bg-engineer-600 hover:bg-engineer-700">
+                  <FileText className="w-4 h-4 mr-1" /> Download CV
+                </Button>
+              </a>
             </div>
           </div>
           
@@ -100,9 +102,13 @@ const Navbar = () => {
                 {link.name}
               </button>
             ))}
-            <Button onClick={() => scrollToSection('cv')} size="sm" className="ml-3 mt-2 bg-engineer-600 hover:bg-engineer-700">
-              Download CV
-            </Button>
+            <div className="px-3 py-2">
+              <a href="/vallary_okumu_cv.pdf" download>
+                <Button size="sm" className="bg-engineer-600 hover:bg-engineer-700">
+                  <FileText className="w-4 h-4 mr-1" /> Download CV
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       )}

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, FileText, Download } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -186,9 +186,12 @@ const ContactSection = () => {
                   Download my detailed resume to learn more about my education,
                   work experience, and skills.
                 </p>
-                <Button className="bg-engineer-600 hover:bg-engineer-700">
-                  Download CV
-                </Button>
+                <a href="/vallary_okumu_cv.pdf" download>
+                  <Button className="bg-engineer-600 hover:bg-engineer-700">
+                    <Download className="w-4 h-4 mr-2" />
+                    Download CV
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
